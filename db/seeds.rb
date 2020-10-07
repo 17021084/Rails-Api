@@ -11,3 +11,7 @@
 end
 
 User.create(username: 'trung', password: "12345678", age: 27)
+
+5.times do
+  Order.create(name: Faker::Name.name, email: Faker::Internet.email , address: Faker::Address.city , phone: Faker::PhoneNumber.phone_number, message: Faker::Lorem.sentence )
+end
