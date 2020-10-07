@@ -9,3 +9,5 @@
 5.times do
   Post.create(title: Faker::Book.title, body: Faker::Lorem.sentence)
 end
+
+User.create(username: 'trung', password: "12345678", age: 27)
